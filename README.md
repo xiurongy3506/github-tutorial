@@ -24,18 +24,20 @@ Github: **Stores code** in the cloud, visually track changes, & **requires git**
     <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/08fe27f74d4bb7d5fc5dd763ceef793333311ec6/vertify%20email%20address.PNG" id="c9.io" alt="" /> 
     * Click on Verify email address and it will bring you to your github account. This means your email address is verified and you are able to access github features!
 
+
 **- SSH setup**
-1. Click on profile icon on the upper right hand corner and press settings.
-    <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/b178b73bd44301eff2e600d907b34c35a88fc029/sshkey1.PNG" id="c9.io" alt="" /> 
+1. Click on profile icon on the upper right hand corner and press settings.   
+    <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/b178b73bd44301eff2e600d907b34c35a88fc029/sshkey1.PNG" id="c9.io" alt="" />  
 2. Then on the leftside bar (under personal setting), click on SSH and GPG Keys.
-    <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/eec3e139b82de6ece3514282e19eccbc3ee7bd3b/sshkey2.PNG" id="c9.io" alt="" /> 
+    <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/eec3e139b82de6ece3514282e19eccbc3ee7bd3b/sshkey2.PNG" id="c9.io" alt="" />  
 3. Click New SSH key
-    <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/f7275c5a9ab414292b372bb1a994384c58c99ecc/sshkey3.PNG" id="c9.io" alt="" />   
+    <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/f7275c5a9ab414292b372bb1a994384c58c99ecc/sshkey3.PNG" id="c9.io" alt="" />  
 4. Go to your cloud9 account. Click on the gear icon on the upper right.
-    <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/7838be5290ae2ba4ba68e8f724463db496095d55/gear%20icon.PNG" id="c9.io" alt="" /> 
-5. Click on "SSH Keys" on the left
+    <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/7838be5290ae2ba4ba68e8f724463db496095d55/gear%20icon.PNG" id="c9.io" alt="" />  
+5. Click on "SSH Keys" on the left.  
 6. Copy the 2nd SSH Key to your github account.
-    <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/5a0875db3b44d192dc8af6d37a1543017a117b0b/sshkey4.PNG" id="c9.io" alt="" /> 
+    <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/5a0875db3b44d192dc8af6d37a1543017a117b0b/sshkey4.PNG" id="c9.io" alt="" />  
+7. Your SSH is now set up!
 
 
 ---
@@ -47,11 +49,11 @@ Github: **Stores code** in the cloud, visually track changes, & **requires git**
 3. Copy the SSH link on github
     <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/8e064dd66c792342c43c3a38f5f8740e2f06c739/sshlink.PNG" id="c9.io" alt="" /> 
 4. Go to your cloud9 account. On a new terminal/workspace and type in the following and paste the link after git clone.
-`git clone [link]` 
+`git clone [link]`  
 5. Everytime you clone something, **always cd into it**  
-`cd [name of the repo]`
+`cd [name of the repo]`  
 5. Make a file in this repo and name it README.md (this will help you practice git add & git commit later on)
-`touch README.md`
+`touch README.md`  
 6. Now initialize git inorder to use git commands
 `git init`
 * You should be seeing something like this
@@ -64,46 +66,46 @@ Github: **Stores code** in the cloud, visually track changes, & **requires git**
 
 **- First add and commit**
 1. Go to the readme file you creaded in cloud9 (the one you cloned from github)  
-`cd [your repo]`
+`cd [your repo]`  
 2. Open up the README.md file you created inside this folder and type in any message you want.
- <img src="https://raw.githubusercontent.com/xiurongy3506/first-repo/81bff2422a0930d773b7f0aaf6999b23b8c156f3/readme.PNG" id="c9.io" alt="" />
+ <img src="https://raw.githubusercontent.com/xiurongy3506/first-repo/81bff2422a0930d773b7f0aaf6999b23b8c156f3/readme.PNG" id="c9.io" alt="" />  
 3. Now go back to the command line, and add this file to staging area.  
-`git add README.md"`
+`git add README.md"`  
 4. Once you have added the file, commit it with a message that will help you reference what you did.
-`git commit -m "[message]"`
+`git commit -m "[message]"`  
 5. Now you have to set connection with your remote repo in github in order to push your commits. Use the following format  
 `git remote add origin [URL]  `
 * Once you added the remote origin, you no longer have to added next time unless you want the file to go to a diferent remote.
     * you can find the URL under "...push an existing repository from the command line"
-    <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/f192d3392b30669d574da82586be6f30ebcf1840/reposetup_.png" id="c9.io" alt="" /> 
+    <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/f192d3392b30669d574da82586be6f30ebcf1840/reposetup_.png" id="c9.io" alt="" />  
 6. Now type the second line of the code  
 `git push -u origin master`
 * This is only for the first time set-up; this means the next time you can just use `git push`to push into the same repo in github.
     * You should be seeing the following after you push showing that you have successfully pushed your README file on github  
-    <img src="https://raw.githubusercontent.com/xiurongy3506/first-repo/master/gitpushresult.PNG" id="c9.io" alt="" /> 
+    <img src="https://raw.githubusercontent.com/xiurongy3506/first-repo/master/gitpushresult.PNG" id="c9.io" alt="" />  
 7. Go back to your github account, open your repo, then pressed commits.
     * You should be able to see the commit you pushed (For your repo, you should only see one commit)
      <img src="https://raw.githubusercontent.com/xiurongy3506/tutorial-repo/3bae62b6dfda58f1b11049f4c05ea1df497b095a/commits.PNG" id="c9.io" alt="" /> 
 
 ---
 ## Workflow & Commands
-If you want to commit another file to github(the remote repository), the process will be different. Let's commit another mesaage to the same README.md file we've been working on.
+If you want to commit another file to github(the remote repository), the process will be different. Let's commit another mesaage to the same README.md file we've been working on.  
 1. Make sure you are on your repo in a command line (at cloud9)
 * You should see USERNAME: ~/workspace/[name of your repo] $  
 2. Open up your README.md. You can use the following to help you open.
-    * c9 README.md
-3. Add or delete anything in the text go back to your terminal.
+    * c9 README.md  
+3. Add or delete anything in the text go back to your terminal.  
 4. Now add your file to the staging area  
-`git add README.md`
+`git add README.md`  
 5. Use `git status` to check the state of your file
 * You should see README.md in green showiing that it can be commited
- <img src="https://raw.githubusercontent.com/xiurongy3506/tutorial-repo/f7b6bc5b05271d0e818b655f059dc4af96599ee0/commit.PNG" id="c9.io" alt="" /> 
+ <img src="https://raw.githubusercontent.com/xiurongy3506/tutorial-repo/f7b6bc5b05271d0e818b655f059dc4af96599ee0/commit.PNG" id="c9.io" alt="" />  
 6. Now commit the file by stating what you did to the file
-`git commit -m "[text]"
+`git commit -m "[text]"  
 7. Push the commit to the remote. This time you don't have to do `git remote add origin [URL]`or `git push -u origin master` because it is a one time set-up that is already added. So just simply type
 `git push`
 * You should still see something similar to 
- <img src="https://raw.githubusercontent.com/xiurongy3506/first-repo/master/gitpushresult.PNG" id="c9.io" alt="" /> 
+ <img src="https://raw.githubusercontent.com/xiurongy3506/first-repo/master/gitpushresult.PNG" id="c9.io" alt="" />  
 8. Now you can go to github and check the commits in your repo. 
 * You should see another commit being added.
 
