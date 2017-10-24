@@ -27,7 +27,7 @@ Github: **Stores code** in the cloud, visually track changes, & **requires git**
 **- SSH setup**
 1. Click on profile icon on the upper right hand corner and press settings.
     <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/b178b73bd44301eff2e600d907b34c35a88fc029/sshkey1.PNG" id="c9.io" alt="" /> 
-2. Then on the leftside bar(under personal setting), click on SSH and GPG Keys.
+2. Then on the leftside bar (under personal setting), click on SSH and GPG Keys.
     <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/eec3e139b82de6ece3514282e19eccbc3ee7bd3b/sshkey2.PNG" id="c9.io" alt="" /> 
 3. Click New SSH key
     <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/f7275c5a9ab414292b372bb1a994384c58c99ecc/sshkey3.PNG" id="c9.io" alt="" />   
@@ -40,13 +40,13 @@ Github: **Stores code** in the cloud, visually track changes, & **requires git**
 
 ---
 ## Repository Setup
-**- Making a Repository(repo) and initialize git**
+**- Making a Repository (repo) and initialize git**
 1. Go to your github account that you have created. On the upper right hand corner, click the "+" sign and create a new respository.
     <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/8f648e44f52da650741f26163ba486b0cb25b7db/make%20repo.PNG" id="c9.io" alt="" /> 
 2. Give your repository a name (In this case I named it tutorial-repo). Once your repository is created, you should be seeing this     <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/f192d3392b30669d574da82586be6f30ebcf1840/reposetup_.png" id="c9.io" alt="" /> 
 3. Copy the SSH link on github
     <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/8e064dd66c792342c43c3a38f5f8740e2f06c739/sshlink.PNG" id="c9.io" alt="" /> 
-4. Go to your cloud9 account. On a new terminal, workspace, type in the following and paste the link after git clone.
+4. Go to your cloud9 account. On a new terminal/workspace and type in the following and paste the link after git clone.
 `git clone [link]` 
 5. Everytime you clone something, **always cd into it**  
 `cd [name of the repo]`
@@ -71,7 +71,7 @@ Github: **Stores code** in the cloud, visually track changes, & **requires git**
 `git add README.md"`
 4. Once you have added the file, commit it with a message that will help you reference what you did.
 `git commit -m "[message]"`
-5. Now you have to set connection with your remote repo in github inorder to push your commits. Use the following format  
+5. Now you have to set connection with your remote repo in github in order to push your commits. Use the following format  
 `git remote add origin [URL]  `
 * Once you added the remote origin, you no longer have to added next time unless you want the file to go to a diferent remote.
     * you can find the URL under "...push an existing repository from the command line"
@@ -92,20 +92,19 @@ If you want to commit another file to github(the remote repository), the process
 * You should see USERNAME: ~/workspace/[name of your repo] $  
 2. Open up your README.md. You can use the following to help you open.
     * c9 README.md
-3. Add or delete anything in the text
-4. go back to yout terminal.
-5. now add your file to the staging area  
+3. Add or delete anything in the text go back to your terminal.
+4. Now add your file to the staging area  
 `git add README.md`
-6. Use git status to check the state of your file
+5. Use `git status` to check the state of your file
 * You should see README.md in green showiing that it can be commited
  <img src="https://raw.githubusercontent.com/xiurongy3506/tutorial-repo/f7b6bc5b05271d0e818b655f059dc4af96599ee0/commit.PNG" id="c9.io" alt="" /> 
-7. Now commit the file by stating what you did to the file
+6. Now commit the file by stating what you did to the file
 `git commit -m "[text]"
-8. Push the commit to the remote. This time you don't have to do `git remote add origin [URL]`or `git push -u origin master` because it is a one time set-up that is already added. So just simply type
+7. Push the commit to the remote. This time you don't have to do `git remote add origin [URL]`or `git push -u origin master` because it is a one time set-up that is already added. So just simply type
 `git push`
 * You should still see something similar to 
  <img src="https://raw.githubusercontent.com/xiurongy3506/first-repo/master/gitpushresult.PNG" id="c9.io" alt="" /> 
-9. Now you can go to github and check the commits in your repo. 
+8. Now you can go to github and check the commits in your repo. 
 * You should see another commit being added.
 
 ---
@@ -113,7 +112,7 @@ If you want to commit another file to github(the remote repository), the process
 undo edit/add/commit/push
 **- Undo edit**
 1. Make sure you are in USERNAME:~/workspace/[name of repo]. If not cd into it.
-2. Go to your READNE.md and add some text.
+2. Go to your README.md and add some text.
 3. Now use git status to check the stage of your file (try to use this command frequently to check your state of file)`git status`
 4. Now notice the nessage above the README.md is red because you have not added to the staging area. Also, there are command listed for how to discard a change.
 5. Type in this command without using <> or ....
@@ -134,7 +133,7 @@ undo edit/add/commit/push
  <img src="https://raw.githubusercontent.com/xiurongy3506/tutorial-repo/17ce9e33dc665f7abeb33db5d6122c4d65bee426/Capture1.PNG" id="c9.io" alt="" /> 
 6. Since your README.md is green, you want to unstage it (turn it to red) using the command given above
 `git reset HEAD README.md`
-7. Now use `git status`, and you should be seeing your README.md unstaged(red).
+7. Now use `git status`, and you should be seeing your README.md unstaged (red).
 
 **- Undo commit**
 1. Following from the step above, add README.md to the staging area.
@@ -143,7 +142,7 @@ undo edit/add/commit/push
 `git commit -m "[text]"
 3. You have just commited README.md, but you want to undo it. Use the following to help you undo the commit.  
 `git reset --soft HEAD~1`
-4. Your have just undo your commit!
+4. You have just undo your commit!
 
 **- Undo Push**
 1. Make sure you are in USERNAME:~/workspace/[name of repo]. If not cd into it.
