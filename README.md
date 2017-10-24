@@ -61,7 +61,8 @@ Github: **Stores code** in the cloud, visually track changes, & **requires git**
     * Note: Do not ever git init in workspace because it is a empty git repository.  
     * However, if you already initialize it  
     `rm -rf .git` will help you remove it  
-    * Notice the (master) is gone when you uninitialize git
+    * Notice the (master) is gone when you uninitialize git  
+    *
     <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/c70ad3ef640ebabb00cdb923ebc9ae857ef7df62/remove.git.PNG" id="c9.io" alt="" />
 
 **- First add and commit**
