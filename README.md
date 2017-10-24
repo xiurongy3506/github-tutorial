@@ -13,8 +13,9 @@ Github: **Stores code** in the cloud, visually track changes, & **requires git**
 **- Make a github account.**  
 1. Go to [www.github.com](www.github.com)  
 2. Click sign up in the upper right hand corner.  
-3. Step 1 will ask you to fill in a username, email address, and password you want to use.  
-<img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/4b6ae1fec8c51ff9bf9e7752847116c29710237c/create%20account%20step1.PNG" id="c9.io" alt="" />  
+3. Step 1 will ask you to fill in a username, email address, and password you want to use. 
+    * <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/4b6ae1fec8c51ff9bf9e7752847116c29710237c/create%20account%20step1.PNG" id="c9.io" alt="" />  
+
 4. Step 2 will ask you to choose a plan.
     * Usually you would choose free plan unless you wan to use the other one.  
 5. Step 3 will ask you some question and you will answer them.  
@@ -30,16 +31,15 @@ Github: **Stores code** in the cloud, visually track changes, & **requires git**
     <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/b178b73bd44301eff2e600d907b34c35a88fc029/sshkey1.PNG" id="c9.io" alt="" />
 2. Then on the leftside bar (under personal setting), click on SSH and GPG Keys.
     <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/eec3e139b82de6ece3514282e19eccbc3ee7bd3b/sshkey2.PNG" id="c9.io" alt="" />
-3. Then on the leftside bar (under personal setting), click on SSH and GPG Keys.
-    <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/eec3e139b82de6ece3514282e19eccbc3ee7bd3b/sshkey2.PNG" id="c9.io" alt="" />
-4. Click New SSH key  
+3. Click New SSH key  
     <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/f7275c5a9ab414292b372bb1a994384c58c99ecc/sshkey3.PNG" id="c9.io" alt="" /> 
-5. Go to your cloud9 account. Click on the gear icon on the upper right.
-    <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/7838be5290ae2ba4ba68e8f724463db496095d55/gear%20icon.PNG" id="c9.io" alt="" /> 
-6. Click on "SSH Keys" on the left.  
-7. Copy the 2nd SSH Key to your github account.
-    <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/5a0875db3b44d192dc8af6d37a1543017a117b0b/sshkey4.PNG" id="c9.io" alt="" />
-8. Your SSH is now set up!
+4. Go to your cloud9 account. Click on the gear icon on the upper right.
+    <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/7838be5290ae2ba4ba68e8f724463db496095d55/gear%20icon.PNG" id="c9.io" alt="" />  
+5. Click on "SSH Keys" on the left. 
+6. Copy the 2nd SSH Key to your github account.
+    <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/5a0875db3b44d192dc8af6d37a1543017a117b0b/sshkey4.PNG" id="c9.io" alt="" />  
+7. Your SSH is now set up!
+
 
 ---
 ## Repository Setup
