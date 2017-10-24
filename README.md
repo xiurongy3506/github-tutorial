@@ -38,10 +38,13 @@ Github: **Stores code** in the cloud, visually track changes, & **requires git**
     <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/f7275c5a9ab414292b372bb1a994384c58c99ecc/sshkey3.PNG" id="c9.io" alt="" />  
 
 4. Go to your cloud9 account. Click on the gear icon on the upper right.
-    <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/7838be5290ae2ba4ba68e8f724463db496095d55/gear%20icon.PNG" id="c9.io" alt="" />  
+    <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/7838be5290ae2ba4ba68e8f724463db496095d55/gear%20icon.PNG" id="c9.io" alt="" /> 
+
 5. Click on "SSH Keys" on the left.  
+
 6. Copy the 2nd SSH Key to your github account.
-    <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/5a0875db3b44d192dc8af6d37a1543017a117b0b/sshkey4.PNG" id="c9.io" alt="" />  
+    <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/5a0875db3b44d192dc8af6d37a1543017a117b0b/sshkey4.PNG" id="c9.io" alt="" /> 
+
 7. Your SSH is now set up!
 
 
