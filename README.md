@@ -62,7 +62,7 @@ Github: **Stores code** in the cloud, visually track changes, & **requires git**
     * However, if you already initialize it  
     `rm -rf .git` will help you remove it  
     * Notice the (master) is gone when you uninitialize git  
-    *
+    
     <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/c70ad3ef640ebabb00cdb923ebc9ae857ef7df62/remove.git.PNG" id="c9.io" alt="" />
 
 **- First add and commit**
@@ -109,11 +109,14 @@ If you want to commit another file to github(the remote repository), the process
  <img src="https://raw.githubusercontent.com/xiurongy3506/tutorial-repo/f7b6bc5b05271d0e818b655f059dc4af96599ee0/commit.PNG" id="c9.io" alt="" />  
 6. Now commit the file by stating what you did to the file
 `git commit -m "[text]"  
+
 7. Push the commit to the remote. This time you don't have to do `git remote add origin [URL]`or `git push -u origin master` because it is a one time set-up that is already added. So just simply type
-`git push`
+`git push` 
+
 * You should still see something similar to 
  <img src="https://raw.githubusercontent.com/xiurongy3506/first-repo/master/gitpushresult.PNG" id="c9.io" alt="" />  
 8. Now you can go to github and check the commits in your repo. 
+
 * You should see another commit being added.
 
 ---
@@ -127,8 +130,10 @@ undo edit/add/commit/push
 5. Type in this command without using <> or ....
 `git checkout -- [file]`
  <img src="https://raw.githubusercontent.com/xiurongy3506/tutorial-repo/7c98343c551fa4856e2a8de206a7aaf2d4a3b03f/undoedit.PNG" id="c9.io" alt="" /> 
+
 6. Now go open up your README.md  
 `c9 README.md`
+
 7. You should see the texts you added being deleted.
 
 **- Undo add**
