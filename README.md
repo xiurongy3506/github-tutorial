@@ -58,12 +58,12 @@ Github: **Stores code** in the cloud, visually track changes, & **requires git**
 7. Now initialize git inorder to use git commands
 `git init`
 * You should be seeing something like this
-* <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/71b7da663b83e9e44b9eae86579a6d025895b034/gitinit.PNG" id="c9.io" alt="" /> 
+* <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/71b7da663b83e9e44b9eae86579a6d025895b034/gitinit.PNG" id="c9.io" alt="" />   
     * Note: Do not ever git init in workspace because it is a empty git repository.
     * However, if you already initialize it, `rm -rf .git` will help you remove it.
     * Notice the (master) is gone when you uninitialize git.
-    * <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/c70ad3ef640ebabb00cdb923ebc9ae857ef7df62/remove.git.PNG" id="c9.io" alt="" />
-   
+    * <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/c70ad3ef640ebabb00cdb923ebc9ae857ef7df62/remove.git.PNG" id="c9.io" alt="" />  
+    
 
 **- First add and commit**
 1. Go to the readme file you creaded in cloud9 (the one you cloned from github)  
