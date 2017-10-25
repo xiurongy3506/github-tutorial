@@ -51,24 +51,34 @@ Github: **Stores code** in the cloud, visually track changes, & **requires git**
 ## Repository Setup
 **- Making a Repository (repo) and initialize git**
 1. Go to your github account that you have created. On the upper right hand corner, click the "+" sign and create a new respository.  
-    <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/8f648e44f52da650741f26163ba486b0cb25b7db/make%20repo.PNG" id="c9.io" alt="" /> 
-2. Give your repository a name (In this case I named it tutorial-repo). Once your repository is created, you should be seeing this     <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/f192d3392b30669d574da82586be6f30ebcf1840/reposetup_.png" id="c9.io" alt="" /> 
-3. Copy the SSH link on github
-    <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/8e064dd66c792342c43c3a38f5f8740e2f06c739/sshlink.PNG" id="c9.io" alt="" /> 
-4. Go to your cloud9 account. On a new terminal/workspace and type in the following and paste the link after git clone.
+    * <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/8f648e44f52da650741f26163ba486b0cb25b7db/make%20repo.PNG" id="c9.io" alt="" />  
+
+2. Give your repository a name (In this case I named it tutorial-repo). Once your repository is created, you should be seeing this  
+    * <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/f192d3392b30669d574da82586be6f30ebcf1840/reposetup_.png" id="c9.io" alt="" />  
+    
+3. Copy the SSH link on github  
+    * <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/8e064dd66c792342c43c3a38f5f8740e2f06c739/sshlink.PNG" id="c9.io" alt="" />  
+
+4. Go to your cloud9 account. On a new terminal/workspace and type in the following and paste the link after git clone.  
 `git clone [link]`  
+
 5. Everytime you clone something, **always cd into it**  
 `cd [name of the repo]`  
+
 6. Make a file in this repo and name it README.md (this will help you practice git add & git commit later on)
 `touch README.md`  
-7. Now initialize git inorder to use git commands
-`git init`
-* You should be seeing something like this
-* <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/71b7da663b83e9e44b9eae86579a6d025895b034/gitinit.PNG" id="c9.io" alt="" />   
-* Note: Do not ever git init in workspace because it is a empty git repository.  
-    * However, if you already initialize it, `rm -rf .git` will help you remove it.
-    * Notice the (master) is gone when you uninitialize git.
-    * <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/c70ad3ef640ebabb00cdb923ebc9ae857ef7df62/remove.git.PNG" id="c9.io" alt="" /> 
+
+7.  Now initialize git inorder to use git commands  
+`git init`  
+    * You should be seeing something like this  
+    * <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/71b7da663b83e9e44b9eae86579a6d025895b034/gitinit.PNG" id="c9.io" alt="" />  
+
+
+* Note: Do not ever git init in workspace because it is an empty git repository.
+_Error Handling_  
+* If you already initialize it, `rm -rf .git` will help you remove it.  
+    * Notice the (master) is gone when you uninitialize git.  
+    * <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/c70ad3ef640ebabb00cdb923ebc9ae857ef7df62/remove.git.PNG" id="c9.io" alt="" />
     
 
 **- First add and commit**
