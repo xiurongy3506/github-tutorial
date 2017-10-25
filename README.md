@@ -94,6 +94,8 @@ Github: **Stores code** in the cloud, visually track changes, & **requires git**
 7. Go back to your github account, open your repo, then pressed commits.  
     * You should be able to see the commit you pushed (For your repo, you should only see one commit)
      <img src="https://raw.githubusercontent.com/xiurongy3506/tutorial-repo/3bae62b6dfda58f1b11049f4c05ea1df497b095a/commits.PNG" id="c9.io" alt="" /> 
+
+
 ---
 ## Workflow & Commands
 If you want to commit another file to github(the remote repository), the process will be different. Let's commit another mesaage to the same README.md file we've been working on.  
@@ -104,20 +106,18 @@ If you want to commit another file to github(the remote repository), the process
 3. Add or delete anything in the text go back to your terminal.  
 4. Now add your file to the staging area  
 `git add README.md`  
-5. Use `git status` to check the state of your file
-* You should see README.md in green showiing that it can be commited
- <img src="https://raw.githubusercontent.com/xiurongy3506/tutorial-repo/f7b6bc5b05271d0e818b655f059dc4af96599ee0/commit.PNG" id="c9.io" alt="" />  
-6. Now commit the file by stating what you did to the file
-`git commit -m "[text]"  
+5. Use `git status` to check the state of your file  
+    * You should see README.md in green showiing that it can be commited  
+    *  <img src="https://raw.githubusercontent.com/xiurongy3506/tutorial-repo/f7b6bc5b05271d0e818b655f059dc4af96599ee0/commit.PNG" id="c9.io" alt="" />  
+    
+6. Now commit the file by stating what you did to the file `git commit -m "[text]"  
+7. Push the commit to the remote. This time you don't have to do `git remote add origin [URL]`or `git push -u origin master` because it is a one time set-up that is already added. So just simply type `git push`  
+    * You should still see something similar to  
+    * <img src="https://raw.githubusercontent.com/xiurongy3506/first-repo/master/gitpushresult.PNG" id="c9.io" alt="" />  
+    
+8. Now you can go to github and check the commits in your repo. You should now see another commit being added to github!  
 
-7. Push the commit to the remote. This time you don't have to do `git remote add origin [URL]`or `git push -u origin master` because it is a one time set-up that is already added. So just simply type
-`git push` 
 
-* You should still see something similar to 
- <img src="https://raw.githubusercontent.com/xiurongy3506/first-repo/master/gitpushresult.PNG" id="c9.io" alt="" />  
-8. Now you can go to github and check the commits in your repo. 
-
-* You should see another commit being added.
 
 ---
 ## Rolling Back Changes
@@ -125,11 +125,13 @@ undo edit/add/commit/push
 **- Undo edit**
 1. Make sure you are in USERNAME:~/workspace/[name of repo]. If not cd into it.
 2. Go to your README.md and add some text.
-3. Now use git status to check the stage of your file (try to use this command frequently to check your state of file)`git status`
+3. Now use git status to check the stage of your file (try to use this command frequently to check your state of file)  
+`git status`  
+
 4. Now notice the nessage above the README.md is red because you have not added to the staging area. Also, there are command listed for how to discard a change.
-5. Type in this command without using <> or ....
-`git checkout -- [file]`
- <img src="https://raw.githubusercontent.com/xiurongy3506/tutorial-repo/7c98343c551fa4856e2a8de206a7aaf2d4a3b03f/undoedit.PNG" id="c9.io" alt="" /> 
+5. Type in this command without using <> or ....  
+`git checkout -- [file]`  
+<img src="https://raw.githubusercontent.com/xiurongy3506/tutorial-repo/7c98343c551fa4856e2a8de206a7aaf2d4a3b03f/undoedit.PNG" id="c9.io" alt="" />  
 
 6. Now go open up your README.md  
 `c9 README.md`
