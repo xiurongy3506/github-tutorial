@@ -85,32 +85,32 @@ _Error Handling_
 1. Go to the readme file you creaded in cloud9 (the one you cloned from github)  
 `cd [your repo]`
 
-2. Open up the README.md file you created inside this folder and type in any message you want.
- <img src="https://raw.githubusercontent.com/xiurongy3506/first-repo/81bff2422a0930d773b7f0aaf6999b23b8c156f3/readme.PNG" id="c9.io" alt="" />  
-
+2. Open up the README.md file you created inside this folder and type in any message you want.  
+    * <img src="https://raw.githubusercontent.com/xiurongy3506/first-repo/81bff2422a0930d773b7f0aaf6999b23b8c156f3/readme.PNG" id="c9.io" alt="" />
 3. Now go back to the command line, and add this file to staging area.  
-`git add README.md"`
+`git add README.md"`  
 
-4. Once you have added the file, commit it with a message that will help you reference what you did.
+4. Once you have added the file, commit it with a message that will help you reference what you did.  
 `git commit -m "[message]"`  
 
 5. Now you have to set connection with your remote repo in github in order to push your commits. Use the following format  
-`git remote add origin [URL]  `  
+`git remote add origin [URL]`  
+* Note: Once you added the remote origin, you no longer have to added next time unless you want the file to go to a diferent remote.  
+    * you can find the URL under "...push an existing repository from the command line"  
+    * <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/f192d3392b30669d574da82586be6f30ebcf1840/reposetup_.png" id="c9.io" alt="" />
 
-* Once you added the remote origin, you no longer have to added next time unless you want the file to go to a diferent remote.  
-   * you can find the URL under "...push an existing repository from the command line"
-    <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/f192d3392b30669d574da82586be6f30ebcf1840/reposetup_.png" id="c9.io" alt="" />
+* 
 
 6. Now type the second line of the code  
-`git push -u origin master`
-* This is only for the first time set-up; this means the next time you can just use `git push`to push into the same repo in github.
+`git push -u origin master`  
+* This is only for the first time set-up; this means the next time you can just use `git push`to push into the same repo in github.  
     * You should be seeing the following after you push showing that you have successfully pushed your README file on github  
-    <img src="https://raw.githubusercontent.com/xiurongy3506/first-repo/master/gitpushresult.PNG" id="c9.io" alt="" />  
+    * <img src="https://raw.githubusercontent.com/xiurongy3506/first-repo/master/gitpushresult.PNG" id="c9.io" alt="" />
 
 7. Go back to your github account, open your repo, then pressed commits.  
-    * You should be able to see the commit you pushed (For your repo, you should only see one commit)
-     <img src="https://raw.githubusercontent.com/xiurongy3506/tutorial-repo/3bae62b6dfda58f1b11049f4c05ea1df497b095a/commits.PNG" id="c9.io" alt="" /> 
-
+    * You should be able to see the commit you just pushed! (For your repo, you should only see one commit)  
+    * <img src="https://raw.githubusercontent.com/xiurongy3506/tutorial-repo/3bae62b6dfda58f1b11049f4c05ea1df497b095a/commits.PNG" id="c9.io" alt="" /> 
+   
 
 ---
 ## Workflow & Commands
