@@ -25,7 +25,7 @@ Github: **Stores code** in the cloud, visually track changes, & **requires git**
     * <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/08fe27f74d4bb7d5fc5dd763ceef793333311ec6/vertify%20email%20address.PNG" id="c9.io" alt="" />  
     * Click on Verify email address and it will bring you to your github account. This means your email address is verified and you are able to access github features!   
 
-### _SSH Setup_
+### **- SSH Setup**
 
 1. Click on profile icon on the upper right hand corner and press settings.   
     * <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/b178b73bd44301eff2e600d907b34c35a88fc029/sshkey1.PNG" id="c9.io" alt="" />  
