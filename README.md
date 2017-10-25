@@ -10,7 +10,7 @@ Github: **Stores code** in the cloud, visually track changes, & **requires git**
 
 ---
 ## Initial Setup
-**- Make a github account.**  
+### **- Make a github account.**  
 1. Go to [www.github.com](www.github.com)  
 2. Click sign up in the upper right hand corner.  
 3. Step 1 will ask you to fill in a username, email address, and password you want to use. 
@@ -25,7 +25,7 @@ Github: **Stores code** in the cloud, visually track changes, & **requires git**
     * <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/08fe27f74d4bb7d5fc5dd763ceef793333311ec6/vertify%20email%20address.PNG" id="c9.io" alt="" />  
     * Click on Verify email address and it will bring you to your github account. This means your email address is verified and you are able to access github features!   
 
-#### _SSH Setwork_
+### _SSH Setup_
 
 1. Click on profile icon on the upper right hand corner and press settings.   
     * <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/b178b73bd44301eff2e600d907b34c35a88fc029/sshkey1.PNG" id="c9.io" alt="" />  
@@ -49,7 +49,7 @@ Github: **Stores code** in the cloud, visually track changes, & **requires git**
 
 ---
 ## Repository Setup
-#### **- Making a Repository (repo) and initialize git**
+### **- Making a Repository (repo) and initialize git**
 1. Go to your github account that you have created. On the upper right hand corner, click the "+" sign and create a new respository.  
     * <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/8f648e44f52da650741f26163ba486b0cb25b7db/make%20repo.PNG" id="c9.io" alt="" />  
 
@@ -81,7 +81,7 @@ _Error Handling_
     * <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/c70ad3ef640ebabb00cdb923ebc9ae857ef7df62/remove.git.PNG" id="c9.io" alt="" />
     
 
-#### **- First add and commit**
+### **- First add and commit**
 1. Go to the readme file you creaded in cloud9 (the one you cloned from github)  
 `cd [your repo]`
 
@@ -137,7 +137,7 @@ If you want to commit another file to github(the remote repository), the process
 ---
 ## Rolling Back Changes
 undo edit/add/commit/push  
-#### **- Undo edit**
+### **- Undo edit**
 
 1. Make sure you are in USERNAME:~/workspace/[name of repo]. If not cd into it.  
 2. Go to your README.md and add some text.  
@@ -147,14 +147,14 @@ undo edit/add/commit/push
 4. Now notice the nessage above the README.md is red because you have not added to the staging area. Also, there are command listed for how to discard a change.
 5. Type in this command without using <> or ....  
 `git checkout -- [file]`  
-<img src="https://raw.githubusercontent.com/xiurongy3506/tutorial-repo/7c98343c551fa4856e2a8de206a7aaf2d4a3b03f/undoedit.PNG" id="c9.io" alt="" />  
+    * <img src="https://raw.githubusercontent.com/xiurongy3506/tutorial-repo/7c98343c551fa4856e2a8de206a7aaf2d4a3b03f/undoedit.PNG" id="c9.io" alt="" />  
 
 6. Now go open up your README.md  
 `c9 README.md`
 
 7. You should see the texts you added being deleted.
 
-#### **- Undo add**
+### **- Undo add**
 1. Make sure you are in USERNAME:~/workspace/[name of repo]. If not cd into it.
 2. Make some changes to your README.md.
 3. On the terminal, add your README.md to the staging area.
@@ -169,7 +169,7 @@ undo edit/add/commit/push
 
 7. Now use `git status`, and you should be seeing your README.md unstaged (red).
 
-#### **- Undo commit**
+### **- Undo commit**
 1. Following from the step above, add README.md to the staging area.
 `git add README.md`
 2. Your README.md should appear green. Now commit it with a message.
@@ -178,7 +178,7 @@ undo edit/add/commit/push
 `git reset --soft HEAD~1`
 4. You have just undo your commit!
 
-#### **- Undo Push**
+### **- Undo Push**
 1. Make sure you are in USERNAME:~/workspace/[name of repo]. If not cd into it.
 2. Add some text to README.md
 3. Add and commit it
