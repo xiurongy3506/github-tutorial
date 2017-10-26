@@ -7,7 +7,6 @@ _by Xiurong Yu_
 Git: Keep **“snapshots”** of code & **does not require github**  
 Github: **Stores code** in the cloud, visually track changes, & **requires git**.
 
-
 ---
 ## Initial Setup
 ### **- Make a github account.**  
@@ -88,7 +87,9 @@ _touch: makes a new file_
 7.  Now initialize git inorder to use git commands  
 `git init`  
     * You should be seeing something like this  
-    * <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/71b7da663b83e9e44b9eae86579a6d025895b034/gitinit.PNG" id="c9.io" alt="" />  
+    ```
+    username:~/workspace/reponame (master) $
+    ```  
   
 _git init: Creates a new, empty git repository. This is where git commands are allowed to be used_
 
@@ -156,7 +157,7 @@ If you want to commit another file to github(the remote repository), the process
 1. Make sure you are on your repo in a command line (at cloud9)
 * You should see ```USERNAME: ~/workspace/[name of your repo] $```  
 2. Open up your README.md. You can use the following to help you open.
-    * c9 README.md  
+    *` c9 README.md`  
 3. Add or delete anything in the text go back to your terminal.  
 4. Now add your file to the staging area  
 `git add README.md`  
@@ -233,6 +234,7 @@ _git revert: undoes a commited snapshop_
 
 9. Once you git revert, a page will pop up  
 10. Then press control X to exit.
+
 
 
 
