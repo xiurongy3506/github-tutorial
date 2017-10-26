@@ -53,8 +53,14 @@ Here are the steps to setting up SSH Key:
 ---
 ## Repository Setup
 ### **- Making a Repository (repo) and initialize git**  
-_Directory: Folder_
-_Repository: When git is initialized, folders are called repo_
+_Directory: Folder_  
+
+_Repository: When git is initialized, folders are called repo_  
+
+_Working Directory: where you'll be doing all the work: creating, editing, deleting and organizing files_  
+
+_Staging Area: where you'll list changes you make to the working directory_  
+
 1. Go to your github account that you have created. On the upper right hand corner, click the "+" sign and create a new respository.  
     * <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/8f648e44f52da650741f26163ba486b0cb25b7db/make%20repo.PNG" id="c9.io" alt="" />  
 
@@ -77,14 +83,14 @@ _cd: Change directory (allows you to move into the directory you want to be in).
 6. Make a file in this repo and name it README.md (this will help you practice git add & git commit later on)
 `touch README.md`  
 
-_touch: makes a new file_
+_touch: makes a new file_  
+
 7.  Now initialize git inorder to use git commands  
 `git init`  
     * You should be seeing something like this  
     * <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/71b7da663b83e9e44b9eae86579a6d025895b034/gitinit.PNG" id="c9.io" alt="" />  
   
 _git init: Creates a new, empty git repository. This is where git commands are allowed to be used_
-
 
 
 * Note: Do not ever git init in workspace because it is an empty git repository.  
@@ -114,7 +120,8 @@ _git init: Creates a new, empty git repository. This is where git commands are a
 4. Once you have added the file, commit it with a message that will help you reference what you did.  
 `git commit -m "[message]"`  
 
-_Git commit -m: Takes a snapshot of the files on the stage._
+_Git commit -m: Takes a snapshot of the files on the stage._  
+* Message should be present tense and should describe the snapshot  
 
 5. Now you have to set connection with your remote repo in github in order to push your commits. Use the following format  
 `git remote add origin [URL]`  
@@ -129,7 +136,7 @@ _git remote add origin [URL]: Sets connection with between the local repo and th
 6. Now type the second line of the code  
 `git push -u origin master`  
 
-_`git push -u origin master` allows you to push the changes you made in your local repo to the main branch (master) of the remote repository._  
+_git push -u origin master: allows you to push the changes you made in your local repo to the main branch (master) of the remote repository._  
 
 * This is only for the first time set-up; this means the next time you can just use `git push`to push into the same repo in github.  
     * You should be seeing the following after you push showing that you have successfully pushed your README file on github  
@@ -145,9 +152,9 @@ _git push: Sends the commit from logo repo to remote repo_
 
 ---
 ## Workflow & Commands
-If you want to commit another file to github(the remote repository), the process will be different. Let's commit another mesaage to the same README.md file we've been working on.  
+If you want to commit another file to github(the remote repository), the process will be different. Let's commit another message to the same README.md file we've been working on.  
 1. Make sure you are on your repo in a command line (at cloud9)
-* You should see USERNAME: ~/workspace/[name of your repo] $  
+* You should see ```USERNAME: ~/workspace/[name of your repo] $```  
 2. Open up your README.md. You can use the following to help you open.
     * c9 README.md  
 3. Add or delete anything in the text go back to your terminal.  
@@ -171,7 +178,7 @@ _git status: Shows the state of file. Tells you the staged and unstagged file, a
 
 ---
 ## Rolling Back Changes
-undo edit/add/commit/push  
+_undo edit/add/commit/push_ 
 ### **- Undo edit**
 
 1. Make sure you are in USERNAME:~/workspace/[name of repo]. If not cd into it.  
