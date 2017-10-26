@@ -52,8 +52,9 @@ Here are the steps to setting up SSH Key:
 
 ---
 ## Repository Setup
-### **- Making a Repository (repo) and initialize git**
-_Repository is another word folder_
+### **- Making a Repository (repo) and initialize git**  
+_Directory: Folder_
+_Repository: When git is initialized, folders are called repo_
 1. Go to your github account that you have created. On the upper right hand corner, click the "+" sign and create a new respository.  
     * <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/8f648e44f52da650741f26163ba486b0cb25b7db/make%20repo.PNG" id="c9.io" alt="" />  
 
@@ -66,22 +67,32 @@ _Repository is another word folder_
 4. Go to your cloud9 account. On a new terminal/workspace and type in the following and paste the link after git clone.  
 `git clone [link]`  
 
+_git clone: Creates a copy of a repo to a directory. In this case, we are cloning the remote repo (from github) to local workspace (in cloud9)._
+
 5. Everytime you clone something, **always cd into it**  
 `cd [name of the repo]`  
+
+_cd: Change directory (allows you to move into the directory you want to be in)._
 
 6. Make a file in this repo and name it README.md (this will help you practice git add & git commit later on)
 `touch README.md`  
 
+_touch: makes a new file_
 7.  Now initialize git inorder to use git commands  
 `git init`  
     * You should be seeing something like this  
-    * ```yourusername:~/workspace/tutorial-repo (master) $    ```
     * <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/71b7da663b83e9e44b9eae86579a6d025895b034/gitinit.PNG" id="c9.io" alt="" />  
+  
+_git init: Creates a new, empty git repository. This is where git commands are allowed to be used_
 
 
-* Note: Do not ever git init in workspace because it is an empty git repository.
-_Error Handling_  
+
+* Note: Do not ever git init in workspace because it is an empty git repository.  
+
+**_Error Handling_**  
+
 * If you already initialize it, `rm -rf .git` will help you remove it.  
+    * _rm -rf .git: Removes the .git repository completely (Undo git init)_  
     * Notice the (master) is gone when you uninitialize git.  
     * <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/c70ad3ef640ebabb00cdb923ebc9ae857ef7df62/remove.git.PNG" id="c9.io" alt="" />
     
@@ -95,11 +106,21 @@ _Error Handling_
 3. Now go back to the command line, and add this file to staging area.  
 `git add README.md"`  
 
+* _Git add: Adds files from the working directory to the staging area. Here are 3 ways you can use git add_  
+    * `git add [filename]` 
+    * `git add .` adds the current directory 
+    * `git add --all` includes all changes, including deleted files 
+
 4. Once you have added the file, commit it with a message that will help you reference what you did.  
 `git commit -m "[message]"`  
 
+_Git commit -m: Takes a snapshot of the files on the stage._
+
 5. Now you have to set connection with your remote repo in github in order to push your commits. Use the following format  
 `git remote add origin [URL]`  
+
+_git remote add origin [URL]: Sets connection with between the local repo and the remote repo, then, give it a short name_
+
 * Note: Once you added the remote origin, you no longer have to added next time unless you want the file to go to a diferent remote.  
     * you can find the URL under "...push an existing repository from the command line"  
     * <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/f192d3392b30669d574da82586be6f30ebcf1840/reposetup_.png" id="c9.io" alt="" />  
@@ -107,11 +128,17 @@ _Error Handling_
 
 6. Now type the second line of the code  
 `git push -u origin master`  
+
+_`git push -u origin master` allows you to push the changes you made in your local repo to the main branch (master) of the remote repository._  
+
 * This is only for the first time set-up; this means the next time you can just use `git push`to push into the same repo in github.  
     * You should be seeing the following after you push showing that you have successfully pushed your README file on github  
-    * <img src="https://raw.githubusercontent.com/xiurongy3506/first-repo/master/gitpushresult.PNG" id="c9.io" alt="" />
+    * <img src="https://raw.githubusercontent.com/xiurongy3506/first-repo/master/gitpushresult.PNG" id="c9.io" alt="" />  
 
-7. Go back to your github account, open your repo, then pressed commits.  
+_git push: Sends the commit from logo repo to remote repo_  
+
+
+7. Go back to your github account, open your repo, then press commits.  
     * You should be able to see the commit you just pushed! (For your repo, you should only see one commit)  
     * <img src="https://raw.githubusercontent.com/xiurongy3506/tutorial-repo/3bae62b6dfda58f1b11049f4c05ea1df497b095a/commits.PNG" id="c9.io" alt="" /> 
    
@@ -129,6 +156,9 @@ If you want to commit another file to github(the remote repository), the process
 5. Use `git status` to check the state of your file  
     * You should see README.md in green showiing that it can be commited  
     *  <img src="https://raw.githubusercontent.com/xiurongy3506/tutorial-repo/f7b6bc5b05271d0e818b655f059dc4af96599ee0/commit.PNG" id="c9.io" alt="" />  
+
+_git status: Shows the state of file. Tells you the staged and unstagged file, and files that are not tracked._  
+
     
 6. Now commit the file by stating what you did to the file `git commit -m "[text]"  
 7. Push the commit to the remote. This time you don't have to do `git remote add origin [URL]`or `git push -u origin master` because it is a one time set-up that is already added. So just simply type `git push`  
