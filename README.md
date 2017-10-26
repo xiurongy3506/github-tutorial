@@ -228,9 +228,11 @@ _undo edit/add/commit/push_
 5. At this point, you realized that you did not mean to push it and you want to undo your push. Use the following to undo a push.  
 6. First use `git log` to view the history of your commits. 
 7. Copy the SHA of the commit you want to delete (something like _b2322f7df4ada74a0681beb121e6b933fe6b021_)  
-8. Then `git revert [SHA]`
+8. Then `git revert [SHA]`  
+_git revert: undoes a commited snapshop_  
+
 9. Once you git revert, a page will pop up  
-10. Then press control X to exit and press Y to save 
+10. Then press control X to exit.
 
 
 
