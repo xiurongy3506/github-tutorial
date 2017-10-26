@@ -25,9 +25,12 @@ Github: **Stores code** in the cloud, visually track changes, & **requires git**
     * <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/08fe27f74d4bb7d5fc5dd763ceef793333311ec6/vertify%20email%20address.PNG" id="c9.io" alt="" />  
     * Click on Verify email address and it will bring you to your github account. This means your email address is verified and you are able to access github features!   
 
-### **- SSH Setup**
+### **- SSH Setup**  
+_Setting up a SSH key allows you to create a connection with a remote server. In this case, you are trying to create a connection between github and cloud9._  
 
-1. Click on profile icon on the upper right hand corner and press settings.   
+Here are the steps to setting up SSH Key:
+
+1. In your github page, click on profile icon on the upper right hand corner and press settings.   
     * <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/b178b73bd44301eff2e600d907b34c35a88fc029/sshkey1.PNG" id="c9.io" alt="" />  
     
 2. Then on the leftside bar (under personal setting), click on SSH and GPG Keys.  
@@ -50,13 +53,14 @@ Github: **Stores code** in the cloud, visually track changes, & **requires git**
 ---
 ## Repository Setup
 ### **- Making a Repository (repo) and initialize git**
+_Repository is another word folder_
 1. Go to your github account that you have created. On the upper right hand corner, click the "+" sign and create a new respository.  
     * <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/8f648e44f52da650741f26163ba486b0cb25b7db/make%20repo.PNG" id="c9.io" alt="" />  
 
 2. Give your repository a name (In this case I named it tutorial-repo). Once your repository is created, you should be seeing this  
     * <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/f192d3392b30669d574da82586be6f30ebcf1840/reposetup_.png" id="c9.io" alt="" />  
     
-3. Copy the SSH link on github  
+3. Copy the SSH link on github; **Make sure it's the SSH link, not HTTP**
     * <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/8e064dd66c792342c43c3a38f5f8740e2f06c739/sshlink.PNG" id="c9.io" alt="" />  
 
 4. Go to your cloud9 account. On a new terminal/workspace and type in the following and paste the link after git clone.  
@@ -71,6 +75,7 @@ Github: **Stores code** in the cloud, visually track changes, & **requires git**
 7.  Now initialize git inorder to use git commands  
 `git init`  
     * You should be seeing something like this  
+    * ```yourusername:~/workspace/tutorial-repo (master) $    ```
     * <img src="https://raw.githubusercontent.com/xiurongy3506/github-tutorial/71b7da663b83e9e44b9eae86579a6d025895b034/gitinit.PNG" id="c9.io" alt="" />  
 
 
@@ -189,6 +194,7 @@ undo edit/add/commit/push
 8. Then `git revert [SHA]`
 9. Once you git revert, a page will pop up  
 10. Then press control X to exit and press Y to save 
+
 
 
 
